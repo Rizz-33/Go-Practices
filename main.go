@@ -18,6 +18,8 @@ func main() {
 	var email string
 	var userTickets uint
 
+	bookings := []string{}
+
 	fmt.Print("Enter the First Name : ")
 	fmt.Scan(&firstName)
 	fmt.Print("Enter the Last Name : ")
@@ -28,6 +30,12 @@ func main() {
 	fmt.Scan(&userTickets)
 
 	remainingTickets = remainingTickets - userTickets
+	bookings = append(bookings, firstName+" "+lastName)
+
+	fmt.Printf("\nThe whole slice : %v\n", bookings)
+	fmt.Printf("The first value : %v\n", bookings[0])
+	fmt.Printf("Array type : %T\n", bookings)
+	fmt.Printf("Array length : %v\n", len(bookings))
 
 	userTickets = 2
 	fmt.Printf("\nThank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
