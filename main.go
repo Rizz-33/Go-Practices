@@ -68,4 +68,21 @@ func main() {
 			}
 		}
 	}
+	city := "Colombo"
+
+	switch city {
+	case "Homagama", "Maharagama", "Kottawa":
+		//logic goes here
+
+	case "Piliyandala":
+
+	case "Nugegoda":
+
+	case "Thalawathugoda", "Malabe":
+
+	case "Colombo":
+
+	default:
+		fmt.Print("No valid city selected")
+	}
 }
